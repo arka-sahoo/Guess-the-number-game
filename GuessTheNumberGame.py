@@ -4,7 +4,7 @@ def number_guessing_game():
     """
     A number guessing game
     """
-    generate_number = random.randint(1, 100)
+    generate_number = random.randint(1, 100) # Randomly generates a number between 1 and 100
     guess = None
     number_of_attempts = 0
 
@@ -14,9 +14,9 @@ def number_guessing_game():
             guess = int(guess_number)
             number_of_attempts += 1
 
-            if guess < generate_number:
+            if guess < generate_number: # Checks if the user's input is too low
                 print("Too low, try again.\n")
-            elif guess > generate_number:
+            elif guess > generate_number: # Checks if the user's input is too high
                 print("Too high, try again.\n")
             else:
                 break
